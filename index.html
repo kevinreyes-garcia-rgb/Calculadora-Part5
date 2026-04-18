@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica — Negra & Morada ✨</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <div class="shape a"></div>
+    <div class="shape b"></div>
+
+    <div class="wrapper" role="application" aria-label="Calculadora científica negra y morada">
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" id="logo-img">
+            </div>
+            <div class="title">
+                <h1>Calculadora Científica</h1>
+                <p>Negra & Morada • Elegante y potente ✨</p>
+            </div>
+            <div class="version">v1.1</div>
+        </header>
+
+        <div class="screen">
+            <div class="display">
+                <div id="expression" class="expression">0</div>
+                <div id="result" class="result">0</div>
+            </div>
+        </div>
+
+        <div class="pad" id="pad">
+            <!-- Row 1 -->
+            <button class="btn btn-fn" data-action="clear">AC</button>
+            <button class="btn btn-fn" data-action="back">⌫</button>
+            <button class="btn btn-fn" data-value="%">%</button>
+            <button class="btn btn-fn" data-value="(">(</button>
+            <button class="btn btn-fn" data-value=")">)</button>
+
+            <!-- Row 2 -->
+            <button class="btn btn-fn" data-value="sin(">sin</button>
+            <button class="btn btn-fn" data-value="cos(">cos</button>
+            <button class="btn btn-fn" data-value="tan(">tan</button>
+            <button class="btn btn-fn" data-value="^">^</button>
+            <button class="btn btn-op" data-action="eval">=</button>
+
+            <!-- Row 3 -->
+            <button class="btn btn-fn" data-value="ln(">ln</button>
+            <button class="btn btn-fn" data-value="log10(">log</button>
+            <button class="btn btn-fn" data-value="sqrt(">√</button>
+            <button class="btn btn-fn" data-value="fact(">n!</button>
+            <button class="btn btn-accent" data-value="pi">π</button>
+
+            <!-- Row 4 -->
+            <button class="btn btn-num" data-value="7">7</button>
+            <button class="btn btn-num" data-value="8">8</button>
+            <button class="btn btn-num" data-value="9">9</button>
+            <button class="btn btn-fn" data-value="/">÷</button>
+            <button class="btn btn-accent" data-value="e">e</button>
+
+            <!-- Row 5 -->
+            <button class="btn btn-num" data-value="4">4</button>
+            <button class="btn btn-num" data-value="5">5</button>
+            <button class="btn btn-num" data-value="6">6</button>
+            <button class="btn btn-fn" data-value="*">×</button>
+            <button class="btn btn-fn" data-value="exp(">exp</button>
+
+            <!-- Row 6 -->
+            <button class="btn btn-num" data-value="1">1</button>
+            <button class="btn btn-num" data-value="2">2</button>
+            <button class="btn btn-num" data-value="3">3</button>
+            <button class="btn btn-fn" data-value="-">−</button>
+            <button class="btn btn-fn" data-value="^2">x²</button>
+
+            <!-- Row 7 -->
+            <button class="btn btn-num span2" data-value="0">0</button>
+            <button class="btn btn-num" data-value=".">.</button>
+            <button class="btn btn-fn" data-value="+">+</button>
+            <button class="btn btn-fn" data-action="ans">ANS</button>
+        </div>
+
+        <footer>Usa el teclado o los botones. ¡Diseño mejorado en negro y morado! 😊</footer>
+    </div>
+
+    <script src="js/calculator.js"></script>
+</body>
+</html>
